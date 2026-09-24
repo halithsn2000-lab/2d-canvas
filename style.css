@@ -1,0 +1,16 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #474747;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 80% 10%;
+}
+canvas{
+    background-color: #ffffff;
+    grid-column: 2/2;
+    grid-row: 2/4;
+}
