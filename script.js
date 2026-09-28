@@ -18,7 +18,19 @@ let nextlist = [];
 let pop ;
 let dump;
 let counter = 0;
+let savebutton = document.getElementById('save');
 
+
+
+savebutton.addEventListener("click", () => {
+        const link = document.createElement("a");
+
+    link.download = "my-drawing.png";
+    link.href = canvas.toDataURL("image/png");
+
+    link.click();
+
+});
 
 
 
@@ -108,6 +120,7 @@ canvas.addEventListener("mousemove", (event) => {
     ctx.strokeStyle = color;
     ctx.lineWidth = brushSize;
     ctx.lineCap = "round";
+    ctx.lineJoin = "round";
     ctx.moveTo(lastX, lastY);
     ctx.lineTo(mouseX, mouseY);
     ctx.stroke();

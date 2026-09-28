@@ -9,16 +9,49 @@
 </head>
 
 <body>
-    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="container">
 
-    <div id="controlls">
-        <button id="clearCanvas">Clear Canvas</button>
+
+
+    <div id="navbar">
+        <button class="navcont" id="clearCanvas">Clear Canvas</button>
+        <button class="navcont"  id = "undo"><img style="height: 30px; background-color: lightgray; padding: 0px;" src="./back-button.png" alt=""></button>
+        <button class="navcont"  id = "next"><img style="height: 30px; background-color: lightgray; padding: 0px;" src="./right-arrows.png" alt=""></button>     
+        <button class="navcont"  id = "save">Save</button>
+    </div>
+
+
+
+
+
+
+  
+<div id="canvasdiv">
+    
+      <div id="controlls">
+
+
         <input type="color" id="colorPicker" value="#000000">
         <input type="range" id="brushSize" min="1" max="50" value="5">
-        <button id = "undo">Undo</button>
-        <button id = "next">next</button>
+    </div>
+    
+    
+    
+    <canvas id="canvas" width="1000" height="600"></canvas>
+
+
+
+
+</div>
+
+
+
 
     </div>
+
+
+
+
 
 </body>
 <script src="./script.js"></script>
